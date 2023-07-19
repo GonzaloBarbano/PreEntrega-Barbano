@@ -1,392 +1,414 @@
 /*HTML*/
-    *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-    *, *::before, *::after{
-        box-sizing: inherit;
-    } 
-    *{
-        font-family: 'Roboto', sans-serif;
-    }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
-/*HEADER*/ 
-    ul li a{
-        text-decoration: none;
-        color: white;
-    }
-    ul li{
-        list-style-type:none;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 50px; 
-        background-color: black;
-        box-shadow: 0 0 30px rgb(97, 97, 97);
-    }
-    header div{
-        width: 800px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-    header nav{
-        display: flex;
-        align-items:end;
-    }
-    header nav ul{
-        font-size: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .nav-item{
-        padding: 8px;
-    }
-/*MAIN INDEX*/ 
-    .inicio{
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .index{
-        box-shadow: 0 0 30px gray;
-    }
-    .inicio div h2{
-        height: 200px;
-        width: 700px;
-        font-size: 30px;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-style: italic;
-    }
-    .inicio div p{
-        height: 200px;
-        width: 500px;
-        font-size: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*VARIABLES*/
+/*HEADER*/
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: black;
+  box-shadow: 0 0 30px rgb(97, 97, 97);
+}
+header div {
+  width: 800px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div nav {
+  display: none;
+}
+header nav {
+  display: flex;
+  align-items: end;
+}
+header nav ul {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+/*MAIN INDEX*/
+.inicio {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inicio div h2 {
+  height: 200px;
+  width: 700px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+.inicio div p {
+  height: 200px;
+  width: 500px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.index {
+  box-shadow: 0 0 30px rgb(97, 97, 97);
+}
+
 /*MAIN SOBRE MI*/
-    .sobremi{
-        display: flex;
-        justify-content: center;
-    }
-    .sobremi section{
-        width: 80%;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }    
-    .quiensoy{
-        height: 50px;
-        padding: 10px;
-    }
-    .sobremi section div h2{
-        font-size: 40px;
-        text-align: center;
-    }
-    #yo{
-        font-size: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    #yo div img{
-        box-shadow: 0 0 20px black;
-        padding: 5px;
-        margin-right: 20px;
-    }
-    #html{
-        font-size: 20px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    #html div img{
-        box-shadow: 0 0 20px black;
-        padding: 5px;
-        margin-left: 20px;
-    }
-    .elegirme{
-        height: 50px;
-        padding: 10px;
-    }
-    #sobremi{
-        font-size: 20px;
-        text-align: left;
-    }
-    .lista{
-        list-style-type: circle;
-    }
+.sobremi {
+  display: flex;
+  justify-content: center;
+}
+.sobremi section {
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sobremi section div h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.quiensoy {
+  height: 50px;
+  padding: 10px;
+}
+
+#yo {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#yo div img {
+  box-shadow: 0 0 30px rgb(97, 97, 97);
+  padding: 5px;
+  margin-right: 20px;
+}
+
+#html {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#html div img {
+  box-shadow: 0 0 30px rgb(97, 97, 97);
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.elegirme {
+  height: 50px;
+  padding: 10px;
+}
+
+#sobremi {
+  font-size: 20px;
+  text-align: left;
+}
+
+.lista {
+  list-style-type: circle;
+}
+
 /*MAIN SERVICIOS*/
-    .servicios{
-        height:100vw;
-        display: flex;
-        justify-content:center;
-    }
-    .servicios section{
-        height: 80%;
-        width: 80%;
-        display: grid;
-        padding: 50px 0;        
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 15px;
-    }
-    .servicios section div{
-        height: 90%;
-        width: 90%px;
-        box-shadow: 0 0 5px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-    }
-    .servicios section div img{
-        border-radius: 15px;
-    }
-    .servicios section .informacion:hover{
-        background-color:rgb(223, 223, 223);
-    }
-    .servicios section div h3{
-        text-align: center;
-        font-size: 30px;
-    }
-    .servicios section div p{
-        text-align: center;
-        font-size: 20px;
-    }
+.servicios {
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.servicios section {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+.servicios section div {
+  height: 90%;
+  width: 90% px;
+  box-shadow: 0 0 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.servicios section div img {
+  border-radius: 15px;
+}
+.servicios section div h3 {
+  text-align: center;
+  font-size: 30px;
+}
+.servicios section div p {
+  text-align: center;
+  font-size: 20px;
+}
+.servicios section .informacion:hover {
+  background-color: rgb(223, 223, 223);
+}
 
 /*MAIN PORTAFOLIO*/
-.portafolio{
-    display: flex;
-    justify-content:center;
+.portafolio {
+  display: flex;
+  justify-content: center;
 }
-.portafolio section{
-    width: 80%;
-    display: grid;
-    padding: 50px 0;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,50%);
-    column-gap: 20px;
-    row-gap: 20px;
+.portafolio section {
+  width: 80%;
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  column-gap: 20px;
+  row-gap: 20px;
 }
-.portafolio section .card{
-    box-shadow: 0 0 10px;
-    border-radius: 5px;
+.portafolio section .card {
+  box-shadow: 0 0 30px rgb(97, 97, 97);
+  border-radius: 5px;
 }
-.portafolio section .card:hover{
-    transition: 1s;
-    transform: scale(1.1);
+.portafolio section .card .description, .portafolio section .card div {
+  padding: 10px 20px;
 }
-.portafolio section .card .description,
-.portafolio section .card div{
-    padding: 10px 20px;
+.portafolio section .card .description h3 {
+  text-align: center;
 }
-.portafolio section .card .description h3{
-    text-align: center;
+.portafolio section .card div button {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
-.portafolio section .card div button{
-    width: 100%;
-    height: 30px;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: white;
+.portafolio section .card div button:hover {
+  background-color: rgb(51, 51, 51);
 }
-.portafolio section .card div button:hover{
-    background-color: rgb(51, 51, 51);
+.portafolio section .card:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 /*MAIN CONTACTO*/
-.contacto{
-    display: flex;
-    justify-content: center;
+.contacto {
+  display: flex;
+  justify-content: center;
 }
-.contacto form{
-    padding: 10px;
+.contacto form {
+  padding: 10px;
 }
-.contacto form div{
-    font-size: 30px;
-    box-shadow: 0 0 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    padding: 5px;
+.contacto form div {
+  font-size: 30px;
+  box-shadow: 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5px;
 }
-.contacto form div:hover{
-    transition: 1s;
-    transform: scale(1.1);
+.contacto form div:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
-.contacto form div button{
-    background-color: blue;
-    color: white;
+.contacto form div button {
+  background-color: blue;
+  color: white;
 }
-.contacto form div button:hover{
-    background-color: rgb(1, 1, 184);
+.contacto form div button:hover {
+  background-color: rgb(1, 1, 184);
 }
+
 /*FOOTER*/
-    footer{
-        height: auto;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        justify-content:flex-end
-    }
-    footer div{
-        margin-right: 20px;
-    }
-/* MEDIA */
-    @media (min-width: 300px) and (max-width: 480px){
-/* MEDIA HEADER*/
-h1{
-    display: none;
+footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
 }
-header div img{
-    width: 300px;
-    height: 200px;
-} 
-header div {
+
+footer div {
+  margin-right: 20px;
+}
+
+/* MEDIA */
+@media (min-width: 300px) and (max-width: 480px) {
+  /* MEDIA HEADER*/
+  header nav, h1 {
+    display: none;
+  }
+  header div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    }
-header nav {
-    justify-content: center;
-    margin-top: 20px;
-    }
-header nav ul {
-    flex-direction: column;
-    align-items: center;    
-    }
-.nav-item {
-    margin-bottom: 10px;
-    }
-/* MEDIA INDEX*/
-.inicio div h2 {
+  }
+  header div img {
+    width: 200px;
+    height: 150px;
+  }
+  header div nav {
+    display: block;
+  }
+  header div nav ul {
+    flex-direction: row;
+    justify-content: start;
+    font-size: 14px;
+  }
+  .nav-item {
+    margin-bottom: 5px;
+  }
+  /* MEDIA INDEX*/
+  .inicio div h2 {
     width: 90%;
     font-size: 24px;
-    }
-.inicio div p {
+  }
+  .inicio div p {
     width: 90%;
     font-size: 16px;
-    }
-/* MEDIA SOBREMII*/
-.sobremi section div h2{
+  }
+  /* MEDIA SOBREMII*/
+  .sobremi section div h2 {
     font-size: 24px;
-    }
-.sobremi section div p{
+  }
+  .sobremi section div p {
     font-size: 16px;
     padding: 10px;
-    }
-/* MEDIA SERVICIOS*/
-.servicios {
+  }
+  /* MEDIA SERVICIOS*/
+  .servicios {
     height: auto;
     display: block;
     padding: 30px;
-    }
-.servicios section {
+  }
+  .servicios section {
     grid-template-columns: 1fr;
     height: auto;
     width: 100%;
     padding: 0;
     justify-items: center;
-    }
-.servicios section div {
-        height: auto;
-        width: 90%;
-        margin-bottom: 20px;
-    }
-.servicios section div img {
+  }
+  .servicios section div {
+    height: auto;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .servicios section div img {
     border-radius: 0;
-    }
-.servicios section .informacion:hover {
-    display: none;
-    }
-.servicios section div h3 {
-        font-size: 20px;
-    }
-.servicios section div p {
+  }
+  .servicios section div h3 {
+    font-size: 20px;
+  }
+  .servicios section div p {
     font-size: 16px;
-    }
-/* MEDIA PORTAFOLIO*/
-.portafolio {
+  }
+  .servicios section.informacion:hover {
+    display: none;
+  }
+  /* MEDIA PORTAFOLIO*/
+  .portafolio {
     display: block;
     padding: 20px;
-    }
-.portafolio section {
+  }
+  .portafolio section {
     width: 100%;
     padding: 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     column-gap: 0;
     row-gap: 10px;
-    }
-.portafolio section .card {
-    box-shadow: 0 0 5px;
+  }
+  .portafolio section .card {
+    box-shadow: 0 0 30px rgb(97, 97, 97);
     border-radius: 5px;
     margin-bottom: 20px;
-    }
-.portafolio section .card .imagen{
+  }
+  .portafolio section .card .imagen {
     display: flex;
     justify-content: center;
-}
-.portafolio section .card:hover {
-    display: none;
-    }
-.portafolio section .card .description,
-.portafolio section .card div {
+  }
+  .portafolio section .card .description, .portafolio section .card div {
     padding: 10px;
-    }
-.portafolio section .card .description h3 {
+  }
+  .portafolio section .card div button {
+    height: 25px;
+    font-size: 15px;
+  }
+  .portafolio section .card .description h3 {
     font-size: 20px;
-    }
-.portafolio section .card div button {
-        height: 25px;
-        font-size: 15px;
-    }
-/* MEDIA CONTACTO*/
-.contacto {
+  }
+  .portafolio section .card:hover {
+    display: none;
+  }
+  /* MEDIA CONTACTO*/
+  .contacto {
     display: block;
     padding: 20px;
-    }
-.contacto form div {
+  }
+  .contacto form div {
     font-size: 20px;
     margin-bottom: 20px;
-    }
-.contacto form div:hover {
+  }
+  .contacto form div button {
+    font-size: 15px;
+    height: 30px;
+  }
+  .contacto form div:hover {
     display: none;
-    }
-.contacto form div button {
-        font-size: 15px;
-        height: 30px;
-    }
-/* MEDIA FOOTER*/
-footer{
+  }
+  /* MEDIA FOOTER*/
+  footer {
     display: flex;
     justify-content: center;
+  }
 }
-    }
-    
+
+/*# sourceMappingURL=estilos.css.map */
