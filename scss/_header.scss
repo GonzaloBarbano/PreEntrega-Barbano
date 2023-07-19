@@ -1,0 +1,40 @@
+/*HEADER*/ 
+ul li{
+    list-style-type:none;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px; 
+    background-color: $fondo-primario;
+    box-shadow: $box-shadow;
+    div{
+        width: 800px;
+        color: $texto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nav{
+            display: none;
+        }
+    }
+    nav{
+        display: flex;
+        align-items:end;
+        ul{
+            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}
+.nav-item{
+    padding: 8px;
+}

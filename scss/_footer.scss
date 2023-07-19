@@ -1,0 +1,11 @@
+/*FOOTER*/
+footer{
+    height: auto;
+    width: 100%;
+    background-color: $fondo-primario;
+    display: flex;
+    justify-content:flex-end
+}
+footer div{
+    margin-right: 20px;
+}

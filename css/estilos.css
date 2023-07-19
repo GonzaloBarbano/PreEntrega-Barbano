@@ -1,5 +1,5 @@
-/*HTML*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+/*VARIABLES*/ /*HTML*/
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*VARIABLES*/
 /*HEADER*/
 ul li {
   list-style-type: none;

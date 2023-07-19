@@ -1,0 +1,133 @@
+/* MEDIA */
+@media (min-width: 300px) and (max-width: 480px){
+    /* MEDIA HEADER*/
+    header nav, h1{
+    display: none;
+    }
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+        width: 200px;
+        height: 150px;
+        } 
+        nav{
+            display: block;
+            ul{
+                flex-direction: row;
+                justify-content: start;
+                font-size: 14px;
+            }
+        }
+    }
+    .nav-item {
+    margin-bottom: 5px;
+    }
+    /* MEDIA INDEX*/
+    .inicio div h2 {
+    width: 90%;
+    font-size: 24px;
+    }
+    .inicio div p {
+    width: 90%;
+    font-size: 16px;
+    }
+    /* MEDIA SOBREMII*/
+    .sobremi section div h2{
+    font-size: 24px;
+    }
+    .sobremi section div p{
+    font-size: 16px;
+    padding: 10px;
+    }
+    /* MEDIA SERVICIOS*/
+    .servicios {
+    height: auto;
+    display: block;
+    padding: 30px;
+        section {
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        justify-items: center;
+            div {
+            height: auto;
+            width: 90%;
+            margin-bottom: 20px;
+                img {
+                border-radius: 0;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            &.informacion:hover {
+                display: none;
+            }
+        }
+    }
+    
+    /* MEDIA PORTAFOLIO*/
+    .portafolio {
+    display: block;
+    padding: 20px;
+        section {
+        width: 100%;
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        column-gap: 0;
+        row-gap: 10px;
+            .card {
+            box-shadow: $box-shadow;
+            border-radius: 5px;
+            margin-bottom: 20px;
+                .imagen{
+                display: flex;
+                justify-content: center;
+                }
+                .description,div {
+                    padding: 10px;
+                }
+                div button {
+                    height: 25px;
+                    font-size: 15px;
+                }
+                .description h3 {
+                    font-size: 20px;
+                }
+                &:hover {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    /* MEDIA CONTACTO*/
+    .contacto {
+    display: block;
+    padding: 20px;
+        form div {
+        font-size: 20px;
+        margin-bottom: 20px;
+            button {
+            font-size: 15px;
+            height: 30px;
+            }
+            &:hover {
+                display: none;
+            }
+        }
+    }
+    
+    /* MEDIA FOOTER*/
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    }
