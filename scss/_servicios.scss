@@ -15,10 +15,7 @@
             width: 90%px;
             box-shadow: 0 0 5px;
             border-radius: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content:space-around;
-            align-items: center;
+            @include flexbox(flex,column,space-around,center);
             img{
                 border-radius: 15px;
             }

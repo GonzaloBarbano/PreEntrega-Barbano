@@ -2,7 +2,7 @@
 footer{
     height: auto;
     width: 100%;
-    background-color: $fondo-primario;
+    background-color: map-get($color, principal);
     display: flex;
     justify-content:flex-end
 }

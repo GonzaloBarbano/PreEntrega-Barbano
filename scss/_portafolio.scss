@@ -22,10 +22,10 @@
                 div button{
                     width: 100%;
                     height: 30px;
-                    background-color: $fondo-primario;
-                    border: 1px solid $fondo-primario;
+                    background-color: map-get($color, principal);
+                    border: 1px solid map-get($color, principal);
                     border-radius: 5px;
-                    color: $texto;
+                    color: map-get($color, secundario);
                     cursor: pointer;
                     &:hover{
                         background-color: rgb(51, 51, 51);
