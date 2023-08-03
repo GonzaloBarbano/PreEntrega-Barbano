@@ -40,6 +40,12 @@ header div {
 header div nav {
   display: none;
 }
+header div input {
+  display: none;
+}
+header div .fas {
+  display: none;
+}
 header nav {
   display: flex;
   align-items: end;
@@ -289,23 +295,44 @@ footer div {
   }
   header div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    color: white;
+    background: black;
+    min-height: 40x;
   }
   header div img {
     width: 200px;
     height: 150px;
+    padding-left: 50px;
+  }
+  header div input {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  header div .fas {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    pointer-events: none;
   }
   header div nav {
+    display: none;
+  }
+  .respmenu input:checked ~ nav {
     display: block;
   }
-  header div nav ul {
-    flex-direction: row;
-    justify-content: start;
-    font-size: 14px;
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
   }
-  .nav-item {
-    margin-bottom: 5px;
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
   }
   /* MEDIA INDEX*/
   .inicio div h2 {

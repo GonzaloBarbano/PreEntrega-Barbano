@@ -6,23 +6,44 @@
     }
     header div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        color: map-get($color, secundario );
+        background: map-get($color, principal );
+        min-height: 40x;
         img{
         width: 200px;
         height: 150px;
+        padding-left: 50px;
         } 
-        nav{
+        input{
             display: block;
-            ul{
-                flex-direction: row;
-                justify-content: start;
-                font-size: 14px;
-            }
+            position: absolute;
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+        }
+        .fas{
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            pointer-events: none;
+        }
+        nav{
+            display: none;
         }
     }
-    .nav-item {
-    margin-bottom: 5px;
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
     }
     /* MEDIA INDEX*/
     .inicio div h2 {

@@ -16,8 +16,14 @@ header{
         color: map-get($color, secundario);
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between; 
         nav{
+            display:none;
+        }
+        input{
+            display: none;
+        }
+        .fas{
             display: none;
         }
     }
