@@ -17,10 +17,11 @@
                 }
             button{
                 border-radius: 10px;
+                color: map-get($color,secundario);
                 border: none;
-                background: linear-gradient(to right,blue,rgb(0, 183, 255));
+                background: linear-gradient(to right,black,rgb(43, 43, 43));
                 &:hover{
-                    background: linear-gradient(to right,rgba(0, 0, 219, 0.775),rgba(0, 143, 199, 0.778));
+                    background: linear-gradient(to right,rgb(23, 23, 23),rgb(9, 7, 7));
                     }
             }
             }

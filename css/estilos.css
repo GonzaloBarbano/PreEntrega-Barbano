@@ -178,8 +178,8 @@ header nav ul {
   column-gap: 15px;
 }
 .servicios section div {
-  height: 90%;
-  width: 90% px;
+  height: 80%;
+  width: 100%;
   box-shadow: 0 0 5px;
   border-radius: 5px;
   display: flex;
@@ -200,6 +200,8 @@ header nav ul {
 }
 .servicios section .informacion:hover {
   background-color: rgb(223, 223, 223);
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 /*MAIN PORTAFOLIO*/
@@ -267,11 +269,12 @@ header nav ul {
 }
 .contacto form div button {
   border-radius: 10px;
+  color: white;
   border: none;
-  background: linear-gradient(to right, blue, rgb(0, 183, 255));
+  background: linear-gradient(to right, black, rgb(43, 43, 43));
 }
 .contacto form div button:hover {
-  background: linear-gradient(to right, rgba(0, 0, 219, 0.775), rgba(0, 143, 199, 0.778));
+  background: linear-gradient(to right, rgb(23, 23, 23), rgb(9, 7, 7));
 }
 
 /*FOOTER*/
@@ -324,6 +327,10 @@ footer div {
   }
   header div nav {
     display: none;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    right: 10%;
   }
   .respmenu input:checked ~ nav {
     display: block;
