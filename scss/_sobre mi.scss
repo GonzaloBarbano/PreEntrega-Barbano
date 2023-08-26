@@ -9,17 +9,21 @@
         div h2{
             font-size: 40px;
             text-align: center;
+            color: map-get($color , secundario );
         }
     }   
 } 
 .quiensoy{
     height: 50px;
     padding: 10px;
+    margin: 10px;
 }
 #yo{
     font-size: 20px;
     @include flexbox(flex,row,center,center);
     text-align: center;
+    color: map-get($color , secundario );
+    margin: 10px;
     div img{
         box-shadow: $box-shadow;
         padding: 5px;
@@ -30,6 +34,8 @@
     font-size: 20px;
     @include flexbox(flex,row-reverse,center,center);
     text-align: center;
+    color: map-get($color , secundario );
+    margin: 10px;
     div img{
         box-shadow: $box-shadow;
         padding: 5px;
@@ -37,13 +43,17 @@
     }
 }
 .elegirme{
-    height: 50px;
+    height: 100%;
     padding: 10px;
+    margin: 10px;
 }
 #sobremi{
     font-size: 20px;
     text-align: left;
+    color: map-get($color , secundario );
+    margin: 10px;
 }
 .lista{
+    color: map-get($color , secundario );
     list-style-type: circle;
 }

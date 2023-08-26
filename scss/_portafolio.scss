@@ -5,7 +5,9 @@
         section{
         width: 80%;
         display: grid;
-        padding: 50px 0;
+        margin: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,50%);
         column-gap: 20px;
@@ -13,23 +15,19 @@
             .card{
             box-shadow: $box-shadow;
             border-radius: 5px;
-                .description,div{
-                    padding: 10px 20px;
-                }
-                .description h3{
-                    text-align: center;
-                }
-                div button{
-                    width: 100%;
+            align-items: center;
+                .btn{
+                    justify-content: center;
+                    width: 80%;
                     height: 30px;
-                    background-color: map-get($color, principal);
                     border: 1px solid map-get($color, principal);
                     border-radius: 5px;
                     color: map-get($color, secundario);
                     cursor: pointer;
+                    background: linear-gradient(to right,black,rgb(43, 43, 43));
                     &:hover{
-                        background-color: rgb(51, 51, 51);
-                        }
+                    background: linear-gradient(to right,rgb(23, 23, 23),rgb(9, 7, 7));
+                    }
                 }
                 &:hover{
                     transition: 1s;

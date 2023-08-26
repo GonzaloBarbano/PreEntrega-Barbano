@@ -4,7 +4,8 @@ footer{
     width: 100%;
     background-color: map-get($color, principal);
     display: flex;
-    justify-content:flex-end
+    justify-content:flex-end;
+    box-shadow: $box-shadow;
 }
 footer div{
     margin-right: 20px;
