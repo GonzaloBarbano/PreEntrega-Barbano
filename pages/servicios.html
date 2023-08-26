@@ -15,14 +15,26 @@
 </head>
 <body>
     <!--CABECERA-->
-    <header>
-        <div class="respmenu">
-            <a href="../index.html"> <img src="../img/logo.jpg" width="200" height="110" alt="GBS"></a> 
-            <h1>Gonzalo Barbano Sumay</h1>
-            <input type="checkbox">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-            <nav class="celular">
+    <div class="container">
+        <header>
+            <div class="respmenu">
+                <a href="../index.html"> <img src="../img/logo.jpg" width="200" height="110" alt="GBS"></a> 
+                <h1>Gonzalo Barbano Sumay</h1>
+                <input type="checkbox">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <nav class="celular">
+                    <ul>
+                        <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
+                        <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
+                        <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
+                        <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--NAVEGACION-->
+            <nav>
                 <ul>
                     <li><a class="nav-item" href="../index.html">Inicio</a></li>
                     <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
@@ -31,57 +43,41 @@
                     <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
-    <!--NAVEGACION-->
-        <nav>
-            <ul>
-                <li><a class="nav-item" href="../index.html">Inicio</a></li>
-                <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
-                <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
-                <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
-                <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>      
-    <!--CONTENIDO PRINCIPAL-->
-    <main class="servicios">
-        <section>
-            <div>
-                <div>
-                    <img src="../img/portfolio.png" height="100%" width="100%" alt="portafolio" class="imagen-responsive">
+        </header>      
+        <!--CONTENIDO PRINCIPAL-->
+        <main class="servicios">
+            <section>
+                <div class="card">
+                    <img src="../img/portfolio.png" width="290" height="290" class="card-img-top" alt="portafolio">
+                    <div class="card-body">
+                        <h5 class="card-title">Portafolio profesional</h5>
+                        <p class="card-text">Creacion de portafolio web profesional. Exhibe tu trabajo, lo que haces y a que te dedicas. </p>
+                    </div>
                 </div>
-                <div class="informacion">
-                    <h3>Portafolio profesional</h3>
-                    <p>Creación de portafolio web profesioal. Exhibe tu trabajo, lo que haces y a que te dedicas.</p>
+                <div class="card">
+                    <img src="../img/website.png" width="290" height="290" class="card-img-top" alt="pagina web">
+                    <div class="card-body">
+                        <h5 class="card-title">Sitio corporativo</h5>
+                        <p class="card-text">Diseño de sitio corporativo, muestra tus servicios, experiencia y tu equipo.</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/website.png" height="100%" width="100%" alt="pagina web">
+                <div class="card">
+                    <img src="../img/e-commerce.png" width="290" height="290" class="card-img-top" alt="e-commerce">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce</h5>
+                        <p class="card-text">Desarrollo de una tienda online, gestiona tus productos, tus ventas y tu inventario. Vende desde donde quieras.</p>
+                    </div>
                 </div>
-                <div class="informacion">
-                    <h3>Sitio corporativo</h3>
-                    <p>Diseño de sitio corporativo, muestra tus servicios, experiencia y tu equipo.</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="../img/e-commerce.png" height="100%" width="100%" alt="e-commerce">
-                </div>
-                <div class="informacion">
-                    <h3>E-commerce</h3>
-                    <p>Desarrollo de una tienda online, gestiona tus productos, tus ventas y tu inventario. Vende desde donde quieras.</p>
-                </div>
-            </div>
         </section>
     </main>
     <!--FOOTER-->
-        <footer>
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.png" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp.png" alt="whatsapp"></a>
-            </div>
-        </footer>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.png" alt="instagram"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
 </body>
+</div>
 </html>

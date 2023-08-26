@@ -7,116 +7,93 @@
     <title>GBS-WebSite</title>
     <link rel="icon" href="../img/favicon1.png"> 
     <script src="https://kit.fontawesome.com/e5ccbcb6f6.js" crossorigin="anonymous"></script>
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"                       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+        <script src="https://kit.fontawesome.com/e5ccbcb6f6.js" crossorigin="anonymous"></script>
     <!--ESTILOS-->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <!--CABECERA-->
-    <header>
-        <div class="respmenu">
-            <a href="../index.html"> <img src="../img/logo.jpg" width="200" height="110" alt="GBS"></a> 
-            <h1>Gonzalo Barbano Sumay</h1>
-            <input type="checkbox">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-            <nav class="celular">
-                <ul>
-                    <li><a class="nav-item" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
-                    <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
-                    <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
-                    <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <div class="col-12">
+            <header>
+                <div class="respmenu">
+                    <a href="../index.html"> <img src="../img/logo.jpg" width="200" height="110" alt="GBS"></a> 
+                    <h1>Gonzalo Barbano Sumay</h1>
+                    <input type="checkbox">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                    <nav class="celular">
+                        <ul>
+                            <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                            <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
+                            <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
+                            <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
+                            <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                    </nav>
+                </div>
+            <!--NAVEGACION-->
+                <nav>
+                    <ul>
+                        <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
+                        <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
+                        <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
+                        <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>     
         </div>
-    <!--NAVEGACION-->
-        <nav>
-            <ul>
-                <li><a class="nav-item" href="../index.html">Inicio</a></li>
-                <li><a class="nav-item" href="./sobre mi.html">Sobre mi</a></li>
-                <li><a class="nav-item" href="./servicios.html">Servicios</a></li>
-                <li><a class="nav-item" href="./portafolio.html">Portafolio</a></li>
-                <li><a class="nav-item" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>     
-    <!--CONTENIDO PRINCIPAL-->
-    <main class="portafolio">
-        <section>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/comida.jpeg" width="290" height="290" alt="comida">
+        <!--CONTENIDO PRINCIPAL-->
+        <main class="portafolio">
+            <section>
+                <div class="card">
+                    <img src="../img/comida.jpeg" width="290" height="290" class="card-img-top" alt="comida">
+                    <div class="card-body">
+                        <h5 class="card-title">Venta comida rapida</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Venta comida rapida</h3>
-                    <a href="#"></a>
+                <div class="card">
+                    <img src="../img/construccion.jpeg" width="290" height="290" class="card-img-top" alt="construccion">
+                    <div class="card-body">
+                        <h5 class="card-title">Empresa Constructora</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-                <div>
-                    <button>Ir al Sitio</button>
+                <div class="card">
+                    <img src="../img/deporte.jpg" width="290" height="290" class="card-img-top" alt="deporte">
+                    <div class="card-body">
+                        <h5 class="card-title">Instruccion deportiva</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/construccion.jpeg" width="290" height="290" alt="construccion">
+                <div class="card">
+                    <img src="../img/deporte2.jpg" width="290" height="290" class="card-img-top" alt="deporte">
+                    <div class="card-body">
+                        <h5 class="card-title">Salud deportiva</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Empresa constructora</h3>
-                    <a href="#"></a>
+                <div class="card">
+                    <img src="../img/mayorista.jpg" width="290" height="290" class="card-img-top" alt="mayorista">
+                    <div class="card-body">
+                        <h5 class="card-title">Venta por mayor</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-                <div>
-                    <button>Ir al Sitio</button>
+                <div class="card">
+                    <img src="../img/vegan.jpg" width="290" height="290" class="card-img-top" alt="comida">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida vegetariana</h5>
+                        <a href="#" class="btn">Ir al Sitio</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/deporte.jpg" width="290" height="290" alt="deporte">
-                </div>
-                <div class="description">
-                    <h3>Instruccion deportiva</h3>
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <button>Ir al Sitio</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/deporte2.jpg" width="290" height="290" alt="deporte">
-                </div>
-                <div class="description">
-                    <h3>Salud y deporte</h3>
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <button>Ir al Sitio</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/mayorista.jpg" width="290" height="290" alt="mayorista">
-                </div>
-                <div class="description">
-                    <h3>Venta por mayor</h3>
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <button>Ir al Sitio</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagen">
-                    <img src="../img/vegan.jpg" width="290" height="290" alt="comida">
-                </div>
-                <div class="description">
-                    <h3>Venta omida vegetariana</h3>
-                    <a href="#"></a>
-                </div>
-                <div>
-                    <button>Ir al Sitio</button>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
     <!--FOOTER-->
     <footer>
         <div>
@@ -125,5 +102,6 @@
             <a href="https://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp.png" alt="whatsapp"></a>
         </div>
     </footer>
+</div>
 </body>
 </html>

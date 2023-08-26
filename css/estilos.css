@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
-/*VARIABLES*/ /*HTML*/
+/*VARIABLES*/
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+/*HTML*/
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +77,11 @@ header nav ul {
   justify-content: center;
   align-items: center;
 }
+.inicio div {
+  background-color: black;
+}
 .inicio div h2 {
+  color: white;
   height: 200px;
   width: 700px;
   font-size: 30px;
@@ -84,6 +93,7 @@ header nav ul {
   font-style: italic;
 }
 .inicio div p {
+  color: white;
   height: 200px;
   width: 500px;
   font-size: 20px;
@@ -114,11 +124,13 @@ header nav ul {
 .sobremi section div h2 {
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 
 .quiensoy {
   height: 50px;
   padding: 10px;
+  margin: 10px;
 }
 
 #yo {
@@ -128,6 +140,8 @@ header nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  margin: 10px;
 }
 #yo div img {
   box-shadow: 0 0 30px rgb(97, 97, 97);
@@ -142,6 +156,8 @@ header nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
+  margin: 10px;
 }
 #html div img {
   box-shadow: 0 0 30px rgb(97, 97, 97);
@@ -150,58 +166,41 @@ header nav ul {
 }
 
 .elegirme {
-  height: 50px;
+  height: 100%;
   padding: 10px;
+  margin: 10px;
 }
 
 #sobremi {
   font-size: 20px;
   text-align: left;
+  color: white;
+  margin: 10px;
 }
 
 .lista {
+  color: white;
   list-style-type: circle;
 }
 
 /*MAIN SERVICIOS*/
 .servicios {
-  height: 100vw;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 .servicios section {
-  height: 80%;
   width: 80%;
   display: grid;
-  padding: 50px 0;
+  padding: 40px 0;
+  padding-top: 100px;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 15px;
+  grid-template-rows: repeat(1, 85%);
+  column-gap: 20px;
 }
-.servicios section div {
-  height: 80%;
-  width: 100%;
-  box-shadow: 0 0 5px;
+.servicios section .card {
+  box-shadow: 0 0 30px rgb(97, 97, 97);
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.servicios section div img {
-  border-radius: 15px;
-}
-.servicios section div h3 {
-  text-align: center;
-  font-size: 30px;
-}
-.servicios section div p {
-  text-align: center;
-  font-size: 20px;
-}
-.servicios section .informacion:hover {
-  background-color: rgb(223, 223, 223);
-  transition: 1s;
-  transform: scale(1.1);
 }
 
 /*MAIN PORTAFOLIO*/
@@ -212,7 +211,9 @@ header nav ul {
 .portafolio section {
   width: 80%;
   display: grid;
-  padding: 50px 0;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 50%);
   column-gap: 20px;
@@ -221,24 +222,20 @@ header nav ul {
 .portafolio section .card {
   box-shadow: 0 0 30px rgb(97, 97, 97);
   border-radius: 5px;
+  align-items: center;
 }
-.portafolio section .card .description, .portafolio section .card div {
-  padding: 10px 20px;
-}
-.portafolio section .card .description h3 {
-  text-align: center;
-}
-.portafolio section .card div button {
-  width: 100%;
+.portafolio section .card .btn {
+  justify-content: center;
+  width: 80%;
   height: 30px;
-  background-color: black;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  background: linear-gradient(to right, black, rgb(43, 43, 43));
 }
-.portafolio section .card div button:hover {
-  background-color: rgb(51, 51, 51);
+.portafolio section .card .btn:hover {
+  background: linear-gradient(to right, rgb(23, 23, 23), rgb(9, 7, 7));
 }
 .portafolio section .card:hover {
   transition: 1s;
@@ -250,7 +247,17 @@ header nav ul {
   display: flex;
   justify-content: center;
 }
+.contacto .ubicacion {
+  margin: 20px;
+  padding: 10px;
+}
+.contacto .ubicacion p {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
 .contacto form {
+  margin: 20px;
   padding: 10px;
 }
 .contacto form div {
@@ -262,10 +269,6 @@ header nav ul {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 5px;
-}
-.contacto form div:hover {
-  transition: 1s;
-  transform: scale(1.1);
 }
 .contacto form div button {
   border-radius: 10px;
@@ -284,6 +287,7 @@ footer {
   background-color: black;
   display: flex;
   justify-content: flex-end;
+  box-shadow: 0 0 30px rgb(97, 97, 97);
 }
 
 footer div {
@@ -292,6 +296,15 @@ footer div {
 
 /* MEDIA */
 @media (min-width: 300px) and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
   /* MEDIA HEADER*/
   header nav, h1 {
     display: none;
@@ -302,25 +315,24 @@ footer div {
     align-items: center;
     color: white;
     background: black;
-    min-height: 40x;
+    min-height: 40px;
   }
   header div img {
-    width: 200px;
+    width: 100%;
     height: 150px;
-    padding-left: 50px;
   }
   header div input {
     display: block;
     position: absolute;
     box-sizing: border-box;
-    width: 30px;
+    width: 20%;
     height: 30px;
     opacity: 0;
   }
   header div .fas {
     display: block;
     position: absolute;
-    width: 30px;
+    width: 100%;
     height: 30px;
     font-size: 30px;
     pointer-events: none;
@@ -343,7 +355,7 @@ footer div {
   }
   /* MEDIA INDEX*/
   .inicio div h2 {
-    width: 90%;
+    width: 100%;
     font-size: 24px;
   }
   .inicio div p {
@@ -351,38 +363,52 @@ footer div {
     font-size: 16px;
   }
   /* MEDIA SOBREMII*/
+  .sobremi #html {
+    background-image: url(../img/yo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.012);
+  }
+  .sobremi section .img {
+    display: none;
+  }
   .sobremi section div h2 {
     font-size: 24px;
   }
   .sobremi section div p {
     font-size: 16px;
-    padding: 10px;
   }
   /* MEDIA SERVICIOS*/
   .servicios {
-    height: auto;
-    display: block;
-    padding: 30px;
+    height: 1440px;
+    padding: 20px;
   }
   .servicios section {
-    grid-template-columns: 1fr;
-    height: auto;
     width: 100%;
     padding: 0;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 0;
+    row-gap: 10px;
   }
-  .servicios section div {
-    height: auto;
-    width: 90%;
+  .servicios section .card {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 30px rgb(97, 97, 97);
+    border-radius: 5px;
     margin-bottom: 20px;
   }
-  .servicios section div img {
-    border-radius: 0;
+  .servicios section .card .imagen {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  .servicios section div h3 {
+  .servicios section .card h3 {
     font-size: 20px;
   }
-  .servicios section div p {
+  .servicios section .card p {
     font-size: 16px;
   }
   .servicios section.informacion:hover {
@@ -390,7 +416,6 @@ footer div {
   }
   /* MEDIA PORTAFOLIO*/
   .portafolio {
-    display: block;
     padding: 20px;
   }
   .portafolio section {
@@ -426,7 +451,6 @@ footer div {
   /* MEDIA CONTACTO*/
   .contacto {
     display: block;
-    padding: 20px;
   }
   .contacto form div {
     font-size: 20px;
